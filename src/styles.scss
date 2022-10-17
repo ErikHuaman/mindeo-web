@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:host {
+  --mindeo: #a03fdf;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg-google {
+  background: #dd4d3f;
+}
+
+.hover\:bg-google:hover {
+  background: #b03d32;
+}
+
+.bg-facebook {
+  background: #3c5a9a;
+}
+
+.hover\:bg-facebook:hover {
+  background: #30487b;
+}
+
+.gradient-mindeo {
+  background-color: #5be3ff;
+  background-image: linear-gradient(90deg, #5be3ff 0%, #8300ff 100%);
+}
+
+.text-mindeo {
+  color: #a03fdf;
+}
+
+.bg-mindeo {
+  background: #a03fdf;
+}
+
+.bg-mindeo-50 {
+  background: #f7ebff;
+}
+
+.hover\:bg-mindeo:hover {
+  background: #a03fdf;
+}
+
+.border-mideo {
+  border: 1px solid #a03fdf;
+}
+
+.LoginDivider-text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(2px);
+  right: 100%;
+  width: 5000px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.LoginDivider-text:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(2px);
+  left: 100%;
+  width: 5000px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.h-screen--16 {
+  height: calc(100vh - 4rem);
+}
